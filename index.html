@@ -23,7 +23,8 @@
 $(document).ready(function () {
 	$('#test').rssfeed(['http://rss.cnn.com/rss/cnn_us.rss'], {
 		limit: 10,
-		sort: 'date'
+		sort: 'date',
+		ssl: true
 	});
 });
 </script>
