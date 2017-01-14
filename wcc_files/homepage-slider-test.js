@@ -1,5 +1,5 @@
 function GetContent(url) {
-	var api = "http://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent("select * from xml where url = '" + url + "'") + "&format=json";
+	var api = "https://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent("select * from xml where url = '" + url + "'") + "&format=json";
 
 	$.getJSON(api, function(data){
 		if (data.query.count > 0) {
